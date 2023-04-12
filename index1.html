@@ -8,18 +8,13 @@
     <body>
         <a-scene embedded arjs>
             <a-marker preset="hiro">
-                <a-entity gltf-model="#iphone" ></a-entity>
-                <a-animation attribute="rotation"
-                             dur="3000"
-                             to="360 0 0"
-                             repeat="indefinite"
-                             easing="linear">
-                    </a-animation>
+                <a-entity gltf-model="#iphone" animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 15000">
+                    <!-- <a-animation attribute="rotation" to="0 360 0" dur="5000" repeat="indefinite" easing="linear"></a-animation> -->
+                </a-entity>
             </a-marker>
             <a-assets>
-                <a-asset-item id="iphone" src="output_file.glb" ></a-asset-item>
+                <a-asset-item id="iphone" src="output_file.glb"></a-asset-item>
             </a-assets>
-
             <a-entity camera></a-entity>
         </a-scene>
     </body>
