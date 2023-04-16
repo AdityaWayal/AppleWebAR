@@ -58,24 +58,24 @@ header{
 .nav-link-apple{
     width: 1.6rem;
     height: 4.4rem;
-    background: url("apple.svg") center no-repeat;
+    background: url("images/icons/apple.svg") center no-repeat;
 }
 .nav-link-search{
     width: 1.6rem;
     height: 4.4rem;
-    background: url("search.svg") center no-repeat;
+    background: url("images/icons/search.svg") center no-repeat;
 }
 
 .nav-link-bag{
     width: 1.4rem;
     height: 4.4rem;
-    background: url("bag.svg") center no-repeat;
+    background: url("images/icons/bag.svg") center no-repeat;
 }
 
 /* iPhone 11 Pro section */
 .iphone-11-pro{
    
-    background: url("iphone_11_pro_large.jpg");
+    background: url("images/hero/iphone-11-pro/iphone_11_pro_large.jpg");
     margin-top: 4.4rem;
  
 }
@@ -131,7 +131,7 @@ header{
 
 /* iPhone 11 section */
 .iphone-11{
-    background: url("iphone_11_large.jpg");
+    background: url("images/hero/iphone-11/iphone_11_large.jpg");
 }
 
 
@@ -147,12 +147,12 @@ header{
 }
 
 .watch{
-    background: url("watch_large.jpg");
+    background: url("images/hero/watch/watch_large.jpg");
 }
 
 .title-heading-watch{
     height: 7.8rem;
-    background: url("logo_watch_large.png") center no-repeat;
+    background: url("images/hero/watch/logo_watch_large.png") center no-repeat;
     background-size: auto 7.8rem;
     margin-top: 1.6rem;
 }
@@ -176,14 +176,14 @@ header{
  /*end*/
  @media screen and (max-width: 1068px){
     .iphone-11-pro{
-        background: url("iphone_11_pro_medium.jpg");
+        background: url("images/hero/iphone-11-pro/iphone_11_pro_medium.jpg");
     }
 
     .iphone-11{
-        background: url("iphone_11_medium.jpg");
+        background: url("images/hero/iphone-11/iphone_11_medium.jpg");
     }
     .watch{
-        background: url("watch_medium.jpg");
+        background: url("images/hero/watch/watch_medium.jpg");
     }
 
     .hero{
@@ -204,7 +204,7 @@ header{
      }
      .title-heading-watch{
         height: 6.2rem;
-        background: url("logo_watch_medium.png") center  no-repeat;
+        background: url("images/hero/watch/logo_watch_medium.png") center  no-repeat;
      }
  }
 
@@ -353,14 +353,14 @@ header{
  }
  @media screen and (max-width: 735px){
     .iphone-11-pro{
-        background: url("iphone_11_pro_small.jpg");
+        background: url("images/hero/iphone-11-pro/iphone_11_pro_small.jpg");
     }
 
     .iphone-11{
-        background: url("iphone_11_small.jpg");
+        background: url("images/hero/iphone-11/iphone_11_small.jpg");
     }
     .watch{
-        background: url("watch_small.jpg");
+        background: url("images/hero/watch/watch_small.jpg");
     }
 
 
@@ -398,3 +398,218 @@ header{
 
  }
 
+
+ .hovertext {
+    position: relative;
+    border-bottom: 1px dotted black;
+  }
+  
+  .hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 140px;
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: opacity 1s ease-in-out;
+  
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+  }
+  
+  .hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  
+  body {
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #0070c9;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #f2f2f2;
+    font-family: calibri;
+    padding: 0 22px;
+    padding-bottom: 21px;
+    overflow: hidden;
+  }
+  
+  .footer-content {
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  
+  .footer-menu {
+    padding-top: 21px;
+    overflow: hidden;
+  }
+  
+  .footer-col {
+    width: 20%;
+    float: left;
+  }
+  
+  input[type="checkbox"] {
+      display: none;
+  }
+  
+  h4 {
+      color: #333;
+      font-size: 14px;
+      position: relative;
+      z-index: 1;
+      background: #f2f2f2;
+      margin-bottom: 6px;
+      margin-top: 0;
+  }
+  
+  .product-list {
+      padding: 0;
+      list-style: none;
+      margin: 0;
+  }
+  
+  .product-list li {
+    margin-bottom: 5px;
+    line-height: 1;
+  }
+  
+  .product-list a {
+    color: #555;
+    display: inline-block;
+    font-size: 12px;
+  }
+  
+  .product-list a:hover {
+    color: #333;
+  }
+  
+  input[type="checkbox"]:checked+.col-section .product-list {
+      transition: transform 300ms ease, -webkit-transform 300ms ease;
+      visibility: visible;
+      position: static;
+      transform: none;
+  }
+  
+  input[type="checkbox"]:checked+.col-section h3::after {
+      transform: rotate(45deg) scale(1.08);
+  }
+  
+  .footer-base {
+    padding-top: 34px;
+    padding-bottom: 21px;
+    color: #888;
+    font-size: 12px; 
+  }
+  
+  .footer-more-ways {
+    margin-bottom: 7px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #d6d6d6;
+  }
+  
+  .nowrap {
+      white-space: nowrap;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    
+    footer {
+      padding: 0 16px;
+      padding-bottom: 21px;
+    }
+    
+    .footer-col {
+      width: 100%;
+    }
+    
+    .item {
+      border-bottom: 1px solid #d6d6d6;
+    }
+    
+    h4 {
+      padding: 10px 0;
+      margin: 0;
+      cursor: pointer;
+    }
+    
+    h4::after {
+      content: '+';
+      float: right;
+      font-size: 14px;
+      font-weight: bold;
+      margin-top: -2px;
+      margin-right: 8px;
+      transition: transform .3s ease
+    }
+    
+    .product-list {
+      visibility: hidden;
+      position: absolute;
+      transform: translateY(-100px);
+      z-index: 1;
+      padding: 5px 0 16px 0;
+    }
+    
+    .product-list li {
+      margin: 0;
+    }
+    
+    .product-list a {
+      display: block;
+      padding: 6px 14px;
+    }
+    
+    .footer-col {
+      overflow: hidden;
+    }
+  }
+  
+  @media only screen and (min-width: 767px) {
+    .item-padding-top {
+      padding-top: 24px;
+    }
+  }
+  
+  .footer-legal-copyright {
+      margin-right: 30px;
+      float: left;
+      margin-top: 3px;
+  }
+  
+  .footer-legal-links {
+    float: left;
+  }
+  
+  .footer-legal-links a {
+    border-right: 1px solid #d6d6d6;
+    margin-right: 10px;
+    padding-right: 12px;
+    display: inline-block;
+    margin-top: 3px;
+    white-space: nowrap;
+    color: #555;
+  }
+  
+  .footer-legal-links a:last-child {
+    border-right: none;
+  }
+  
+  .footer-legal-links a:hover {
+    color: #333;
+  }
